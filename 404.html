@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Não Encontrada | Maristela Sant’Anna Advocacia</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Variáveis de CSS (Paleta de Cores e Fontes) --- */
+        :root {
+            --color-bg-main: #FDFCF8; /* Branco Pérola / Papel suave */
+            --color-card-bg: #FCFBF9;
+
+            --color-accent: rgb(143, 119, 19); /* dourado */
+            --color-text-dark: #2C2C2C; 
+            --color-text-light: #5F5F5F;
+            --color-white: #FFFFFF; 
+            --border-color: #DCD8D0;
+            
+            --font-script: 'Allura', cursive;
+            --font-serif: 'Lora', serif;
+
+            --container-width: 1200px;
+            --section-spacing: 4rem;
+        }
+
+        /* --- Reset e Estilos Base --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-serif);
+            background-color: var(--color-bg-main);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            /* Flexbox para centralizar o erro na tela inteira */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            color: var(--color-text-dark);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        /* Botão CTA (Mantido do seu estilo) */
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-top: 1.5rem;
+        }
+
+        .btn-cta:hover {
+            background-color: rgb(117, 96, 12); /* dourado escuro */
+        }
+
+        /* --- Estilos Específicos da Página 404 --- */
+        .error-content {
+            padding: 2rem;
+            background-color: var(--color-white);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 600px;
+            width: 90%;
+            border-top: 4px solid var(--color-accent); /* Detalhe dourado no topo */
+        }
+
+        .error-code {
+            font-family: var(--font-script);
+            font-size: 6rem;
+            color: var(--color-accent);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .error-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .redirect-msg {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            margin-top: 2rem;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="error-content">
+        <div class="error-code">404</div>
+        
+        <h2 class="error-title">Página Não Encontrada</h2>
+        
+        <p>Pedimos desculpas, mas o endereço que você tentou acessar não está disponível ou foi movido.</p>
+        
+        <a href="index.html" class="btn-cta">
+            Voltar ao Início
+        </a>
+
+        <p class="redirect-msg">Você será redirecionado automaticamente em 5 segundos...</p>
+    </div>
+
+    <script>
+        // Aguarda 5000 milissegundos (5 segundos) e redireciona
+        setTimeout(function(){
+            window.location.href = 'index.html'; 
+            // Certifique-se que sua página principal se chama 'index.html'
+        }, 5000);
+    </script>
+
+</body>
+</html>
