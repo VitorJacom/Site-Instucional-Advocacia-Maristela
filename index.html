@@ -6,13 +6,14 @@
     <link rel="canonical" href="https://www.maristelasantanna.adv.br/" />
 
     <title>Maristela Sant’Anna | Advocacia Trabalhista Sob Medida</title>
+    
     <meta
       name="description"
-      content="Advocacia trabalhista personalizada com 40 anos de experiência. Dra. Maristela Sant’Anna, Mestra em Direito. Atendimento humanizado em Porto Alegre e Capão da Canoa."
+      content="Advocacia trabalhista personalizada com 40 anos de experiência. Dra. Maristela Sant’Anna, Pós-graduada em Direito do Trabalho. Atendimento humanizado em Porto Alegre e Capão da Canoa."
     />
     <meta
       name="keywords"
-      content="advogada trabalhista, direito do trabalho porto alegre, advocacia humanizada, especialista em acidente de trabalho, advogada sindicato comercio, maristela santanna"
+      content="advogada trabalhista, direito do trabalho porto alegre, advocacia humanizada, especialista em acidente de trabalho, advogada sindicato comercio, maristela santanna, pós-graduada direito do trabalho"
     />
     <meta name="author" content="Maristela Sant’Anna Advocacia" />
     <meta name="robots" content="index, follow" />
@@ -25,7 +26,7 @@
     />
     <meta
       property="og:description"
-      content="40 anos de defesa estratégica e atendimento humanizado. Mestra em Direito do Trabalho em Porto Alegre e Litoral."
+      content="40 anos de defesa estratégica e atendimento humanizado. Pós-graduada em Direito do Trabalho com atuação em Porto Alegre e Litoral."
     />
     <meta
       property="og:image"
@@ -120,9 +121,9 @@
       }
 
       .btn-cta {
-        display: inline-flex; /* Alinha ícone e texto perfeitamente */
+        display: inline-flex;
         align-items: center;
-        gap: 10px; /* Espaço entre o ícone e o texto */
+        gap: 10px;
         background-color: var(--color-accent);
         color: var(--color-white);
         padding: 1rem 2rem;
@@ -137,12 +138,12 @@
       }
 
       .btn-cta:hover {
-        background-color: rgb(117, 96, 12); /* dourado escuro */
+        background-color: rgb(117, 96, 12);
       }
 
       .btn-cta i {
         color: #000000;
-        font-size: 1.3rem; /* Um pouco maior que o texto para destaque */
+        font-size: 1.3rem;
       }
 
       /* --- Header --- */
@@ -167,7 +168,6 @@
         align-items: center;
       }
 
-      /* A característica distintiva: Nome Script + Linha Vertical + Cargo Serif */
       .brand-name {
         font-family: var(--font-script);
         font-size: 3.5rem;
@@ -195,7 +195,6 @@
         flex-direction: column;
       }
 
-      /* Navegação simples (escondida no mobile por enquanto para focar no layout) */
       .desktop-nav {
         display: none;
       }
@@ -250,13 +249,11 @@
         font-weight: 600;
       }
 
-      /* Estilo do Placeholder da Imagem Obrigatória */
       .hero-image-container {
         text-align: center;
       }
 
       .foto-frame {
-        /* Moldura elegante para a imagem placeholder */
         border: 8px solid var(--color-white);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         max-width: 100%;
@@ -264,10 +261,9 @@
         display: block;
         margin: 0 auto;
         border-radius: 4px;
-        /* Garante que a imagem placeholder não fique gigante */
         max-height: 400px;
         object-fit: contain;
-        background-color: #eee; /* Fundo caso a imagem seja PNG transparente */
+        background-color: #eee;
       }
 
       /* --- Authority Banner --- */
@@ -296,7 +292,7 @@
         opacity: 0.9;
       }
 
-      /* --- Sobre / Artesanal --- */
+      /* --- Sobre --- */
       .about-section {
         padding: var(--section-spacing) 0;
         background-color: var(--color-white);
@@ -310,7 +306,6 @@
         padding-bottom: 1rem;
       }
 
-      /* Linha decorativa abaixo dos títulos */
       .section-title::after {
         content: "";
         position: absolute;
@@ -425,7 +420,7 @@
 
       /* --- Footer --- */
       footer {
-        background-color: #1a1a1a; /* Fundo escuro para contraste */
+        background-color: #1a1a1a;
         color: #aaaaaa;
         padding: 3rem 0;
         text-align: center;
@@ -455,76 +450,24 @@
         border-radius: 50px;
       }
 
-      /* =========================================
-           RESPONSIVIDADE (Media Queries)
-           ========================================= */
-
-      /* Tablet Portrait e maiores */
+      /* Media Queries */
       @media (min-width: 768px) {
-        .brand-name {
-          font-size: 3.0rem;
-        }
-
-        .authority-grid {
-          flex-direction: row;
-          justify-content: center;
-          gap: 4rem;
-        }
-
-        .services-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
+        .brand-name { font-size: 3.0rem; }
+        .authority-grid { flex-direction: row; justify-content: center; gap: 4rem; }
+        .services-grid { grid-template-columns: repeat(2, 1fr); }
       }
 
-      /* Desktop e maiores */
       @media (min-width: 1024px) {
-        .desktop-nav {
-          display: block;
-        }
-
-        .desktop-nav ul {
-          display: flex;
-          gap: 2rem;
-        }
-
-        .desktop-nav a {
-          font-weight: 600;
-          font-size: 0.9rem;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          transition: color 0.3s;
-        }
-
-        .desktop-nav a:hover {
-          color: var(--color-accent);
-        }
-
-        .hero-grid {
-          grid-template-columns: 1fr 1fr; /* Texto esquerda, Imagem direita */
-        }
-
-        .hero-text h1 {
-          font-size: 3.5rem;
-        }
-
-        .hero-image-container {
-          text-align: right;
-        }
-
-        .services-grid {
-          grid-template-columns: repeat(3, 1fr);
-        }
-
-        .locations-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        /* Centraliza o card do escritório central quando houver 3 itens */
-        .location-card.central {
-          grid-column: span 2;
-          max-width: 50%;
-          margin: 0 auto;
-        }
+        .desktop-nav { display: block; }
+        .desktop-nav ul { display: flex; gap: 2rem; }
+        .desktop-nav a { font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; transition: color 0.3s; }
+        .desktop-nav a:hover { color: var(--color-accent); }
+        .hero-grid { grid-template-columns: 1fr 1fr; }
+        .hero-text h1 { font-size: 3.5rem; }
+        .hero-image-container { text-align: right; }
+        .services-grid { grid-template-columns: repeat(3, 1fr); }
+        .locations-grid { grid-template-columns: repeat(2, 1fr); }
+        .location-card.central { grid-column: span 2; max-width: 50%; margin: 0 auto; }
       }
     </style>
   </head>
@@ -561,14 +504,15 @@
             <span class="highlight-accent">Advocacia Humanizada</span> na Defesa
             do Trabalhador
           </h1>
+          
           <p class="subtitle">
             Atendimento exclusivo e detalhista com a Dra. Maristela Sant’Anna,
-            ós-graduada e Mestra em Direito.
+            Pós-graduada em Direito do Trabalho.
           </p>
 
           <div class="credentials-badges">
             <span class="badge">OAB/RS 21.050</span>
-            <span class="badge">Mestra em Direito</span>
+            <span class="badge">Pós-graduada em Direito</span>
             <span class="badge">40 Anos de Trajetória</span>
           </div>
 
@@ -595,8 +539,8 @@
           <span>De advocacia dedicada</span>
         </div>
         <div class="authority-item">
-          <strong>Mestra</strong>
-          <span>& Especialista em Direito do Trabalho</span>
+          <strong>Especialista</strong>
+          <span>Pós-graduada em Direito do Trabalho</span>
         </div>
         <div class="authority-item">
           <strong>30 Anos</strong>
